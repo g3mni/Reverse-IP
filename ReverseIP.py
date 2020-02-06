@@ -13,7 +13,7 @@ i = 0
 for i,row in enumerate(title,start=i):#循环读取并写入表头
     booksheet.write(0,i,row)
     i +=1
-fp = open('ip.txt')
+fp = open('IP.txt')
 for ip in fp.readlines():
     addr = ip.strip()#根据情况linux \r\n win \n或者直接空，删除默认空白符号
     url = "https://dns.aizhan.com/"+str(addr)+"/" 
